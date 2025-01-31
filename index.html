@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nanonets Usage Tracking Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Nanonets Usage Tracking Dashboard</h1>
+        <div class="filters">
+            <label for="year">Year:</label>
+            <select id="year">
+                <!-- Options will be populated by JavaScript -->
+            </select>
+
+            <label for="month">Month:</label>
+            <select id="month">
+                <!-- Options will be populated by JavaScript -->
+            </select>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Enter email">
+
+            <button id="filterButton">Filter</button>
+        </div>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Month</th>
+                    <th>Email</th>
+                    <th>Model ID</th>
+                    <th>Pages</th>
+                    <th>Documents</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data rows will be populated by JavaScript -->
+            </tbody>
+        </table>
+        <!-- Pagination Controls -->
+        <div class="pagination">
+            <button id="prevPage">Previous</button>
+            <span id="pageInfo"></span>
+            <button id="nextPage">Next</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
