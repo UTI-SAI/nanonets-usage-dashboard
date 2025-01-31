@@ -45,9 +45,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Populate filters
     function populateFilters() {
-        // Populate year dropdown from 2024 to the current year
+        // Populate year dropdown from the current year down to 2024
         const currentYear = new Date().getFullYear();
-        for (let year = 2024; year <= currentYear; year++) {
+        for (let year = currentYear; year >= 2024; year--) {
             const option = document.createElement('option');
             option.value = year;
             option.textContent = year;
